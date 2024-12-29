@@ -3,7 +3,7 @@ export default function App() {
     const formEle = document.querySelector("form");
     const formDatab = new FormData(formEle);
     fetch(
-      "https://script.google.com/macros/s/AKfycbxCXo0Zi17qiD7n_FYdfEv-QdzHpfwpQqCcC_qFC4LDXhjtqLFwLgNfWBq-UWlVulKpkw/exec",
+      "https://script.google.com/macros/s/AKfycbyBmggyNBMBcC08BvMDx2Cr9fG7krTrBAG7Jq4IV7V0OOEbFLDfYMes0Vo15YjEsqE6Nw/exec",
       {
         method: "POST",
         body: formDatab
@@ -25,12 +25,16 @@ export default function App() {
       </h2>
       <div>
         <form className="form" onSubmit={(e) => Submit(e)}>
-          <input type="text" name="id"
+          <input type="text" name="id"> 
+          <input type="text" name="country"> 
+          <input type="text" name="plate"> 
+          <input type="text" name="timestamp"> 
+           <input type="text" name="image">
+           <input type="text" name="overview">
            <label>Plate image</label>
            <input type="file" name="plate_image" accept="image/bmp, 
-           <input placeholder="Your Message" name="Message" type="text" />
-            <input type="submit" value="Submit">
-          // <input name="Name" type="submit" />
+           <input type="submit" value="Submit">
+           <input name="Name" type="submit" />
         </form>
       </div>
     </div>
