@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+ <body>
+ <form action="http://ip:port/api/event" method="post" 
+enctype="multipart/form-data">
+ <label>data</label>
+ <input type="text" name="id" value="{JSON content here…}" 
+required><br>
+<label>Image</label>
+ <input type="file" name="image" accept="image/bmp, image/jpeg, 
+image/png"><br>
+ <label>Plate image</label>
+ <input type="file" name="plate_image" accept="image/bmp, 
+image/jpeg, image/png"><br>
+<label>Overview image</label>
+ <input type="file" name="overview_image" accept="image/bmp, 
+image/jpeg, image/png"><br>
+ <label>Video</label>
+ <input type="file" name="video" accept="video/mp4"><br>
+ <input type="submit" value="Submit">
+ </form>
+ </body>
+</html>
